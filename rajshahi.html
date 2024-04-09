@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajshahi</title>
+    <link rel="stylesheet" href="./css/style.css" />
+   <link rel="stylesheet" href="./css/sylhet.css">
+
+   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link
+    rel="stylesheet"
+    href="./css/bootstrap.min.css"
+   
+  />
+ 
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+      integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous" />
+ 
+  </head>
+  <body>
+
+    
+ 
+    <div class="overlay hidden"></div>
+    <header class="header_area">
+       
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top sticky">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Logo</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+             >
+            <span class="navbar-toggler-icon" id="nav-toggle"></span>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html" id="home"
+                    >Home</a
+                  >
+                </li>
+                
+                
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#area.html" id="area"
+                    >Area</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="about.html" id="about-us">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#advertise.html" id="advertise">Advertise</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="faqs.html"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >FAQs</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="#contact.html"
+                    tabindex="-1"
+                    aria-disabled="true" id="contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              
+              <i class="fas fa-times nav__close" id="nav-close"></i>
+
+              <div class="button">
+                <a href="#sign.html" class="btn btn-outline-light Sign" id="sign-in">Sign In</a>
+                <a  href="#log.html" class="btn btn-outline-light Log" id="log-in">Log In</a>
+              
+              </div>
+              
+          </div>
+
+         </div>  
+
+
+
+         <section class="area hidden">
+
+            
+          <select class="Division" onchange="laO(this.value)">
+            <option>Dhaka</option>
+            <option value="Dhaka-all.html">Dhaka-all</option>
+            <option>Gazipur</option>
+            <option>Manikganj</option>
+             <option>Narayanganj</option>
+             <option>Mymensingh</option>  
+             <option>Kishorganj</option>
+             <option>Rajbari</option>
+          </select>
+          <br/>
+          <select class="Division" onchange="laT(this.value)">
+            <option>Sylhet</option>
+            <option value="Sylhet-all.html">Sylhet-all</option>
+            <option>Hobiganj</option>
+            <option>Moulovibazar</option>
+            <option>Sunamganj</option>
+         
+           
+         </select>
+         <br/>
+         <select class="Division" onchange="laH(this.value)">
+          <option>Chottogram</option>
+           <option value="Chottogram.html">Chottogram-all</option>
+           <option>Bandarban</option>
+           <option>Brahmanbaria</option>
+           <option>Cox's Bazar</option>
+           <option>Comilla</option>
+           <option>Noakhali</option>
+           <option>Feni</option>
+          
+        </select>
+        <br/>
+        
+        <select class="Division" onchange="laF(this.value)">
+          <option>Rangpur</option>
+          <option value="Rangpur.html">Rangpur-all</option>
+          <option>Dinajpur</option>
+          <option>Gaibandha</option>
+          <option>Kurigram</option>
+          <option>Nilphamri</option>
+          <option>Thaurgaon</option>
+       
+       </select>
+       <br/>
+       <select class="Division"  onchange="laI(this.value)">
+        <option>Barishal</option>
+         <option value="Barishal.html">Barishal-all</option>
+         <option>Barguna</option>
+         <option>Bhola</option>
+         <option>Jhaloathi</option>
+         <option>Pirojpur</option>
+         
+        
+      </select>
+      <br>
+      <select class="Division" onchange="laS(this.value)">
+        <option>Khulna</option>
+        <option value="Khulna.html">Khulna-all</option>
+        <option>Jashare</option>
+        <option>Kustia</option>
+        <option>Meherpur</option>
+        <option>Bagerhat</option>
+       
+       
+     </select>
+      <br/>
+     <select class="Division" onchange="laA(this.value)">
+      <option>Rajshahi</option>
+       <option value="Rajshahi.html">Rajshahi-all</option>
+       <option>Bogura</option>
+       <option>Natore</option>
+       <option>Pabna</option>
+       <option>Sirajganj</option>
+       <option>Naogaon</option>
+     
+      
+    </select>
+   
+        </section>
+        </nav>
+    </header>
+
+
+
+    <div id="sylhet-section">
+      <div class="dark-overlay">
+        <div class="home-inner"></div>
+      </div>
+    </div>
+
+
+ 
+  
+  
+      <!--Advertise-->
+  
+      <section class="modal-section show-modal">
+       <span class="close-button"><i class="fas fa-times"></i></span>
+  <p>Dear Seller,<br/>
+    Welcome to our website.Hope we satisfied you throuh our services.
+    <br/><br/>
+    
+    
+    If you want to sell your lands,you can advertise your land in our websites.So,that a buyer can easily find your land and contact with you throuh this website.To advertise your land you have to  </p>
+    <button class="sign-In" id="signIn">Sign In</button>
+    <br/><br/>
+     <div class="help">
+    <p>If you want to learn more about us ,you can contact with us.</p>
+  
+  
+  <div class="modal-contacts">
+    <span> <i class="far fa-envelope-open"></i>Email: hahshsh5@gmail.com</span>
+  
+  
+    <p><i class="fas fa-phone-volume"></i>  Phone: 01745567899 </p></div>
+    </div>
+  </section>
+  
+  
+  
+  <!--Contact Us-->
+  
+  
+  <section class="contact-us show-contact">
+    <span class="contact-close-button"><i class="fas fa-times"></i></span>
+    <div class="contact-modal">
+  
+      <h4>What do you want?</h4>
+      <div class="inputs">
+  
+        <input type="radio" name="status"> I need support <br>
+        <input type="radio" name="status"> I'd make a feedback
+      </div>
+  
+  
+      <form class="form-group">
+        <h5 >Name</h5>
+    
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+      
+  
+        <h5 class="mt-2">Email</h5>
+        <input type="email" name="email" class="form-control" placeholder="Enter your email address">
+  
+        <h5 class="mt-2">Please provide detailed information</h5>
+        <textarea rows="3" cols="37" class="form-control"></textarea>
+  
+  <br/>
+        <button class="form-control send-button btn btn-outline-primary">Send</button>
+  
+      </form>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  <!--Sign In-->
+  <section class="sign-in show-signIn">
+  
+    <div class="signIn-modal">
+    <span class="signIn-close-button"><i class="fas fa-times"></i></span>
+  
+  <form class="form-group">
+    <h5 >Name</h5>
+  
+      <div class="form-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+  
+  
+    <h5 class="">Email</h5>
+    <input type="email" name="email" class="form-control" placeholder="Enter your email address">
+  
+    <h5 class="">Password</h5>
+      <input type="password" name="password" class="form-control" placeholder="Enter your password">
+    
+    <h5 class="">State</h5>
+    <input type="text" name="state" class="form-control"  placeholder="Enter your state">
+  
+    <h5 class="">What do you want?</h5>
+     <select class="form-control">
+      <option></option>
+       <option>Buying</option>
+       <option>Selling</option>
+     </select>
+  
+     <h5 class="">Image</h5>
+     <input type="file" class="file">
+   
+  
+  
+    <h5 class="">Please provide detailed information</h5>
+    <textarea rows="3" cols="37" class="form-control"></textarea>
+  
+  <br/>
+    <button class="form-control send-button btn btn-outline-primary">Send</button>
+  
+  </form>
+  
+  </div>
+  </section>
+  
+      <!--Log In-->
+  
+      <section class="log-in show-logIn">
+        <div class="logIn-modal">
+         <span class="logIn-close-button"><i class="fas fa-times"></i></span>
+                <form class="form-group">
+                   
+  
+  
+                 <h5 class="mt-2">Email</h5>
+                 <input type="email" name="email" class="form-control" placeholder="Enter your email address">
+             
+                 <h5 class="mt-2">Password</h5>
+                 <input type="password" name="password" class="form-control" placeholder="Enter your password">
+               
+                    <h5 class="d-inline">Forgotten password?</h5>
+  
+  
+             <div class="oRSignIn text-right">
+             <button class="logIn-button btn btn-outline-light">Send</button>
+        
+             </div>
+           </form>
+        </div>
+  
+   </section>
+
+
+   <section class="sylhet">
+                   
+    <div class="sylhet-title">
+        <div class="act"></div>
+          <h5>Rajshahi</h5>
+          <p class="Bangladesh">The silk city of Bangladesh!!</p>
+    </div>
+
+</section>
+
+
+
+<section class="image-details row m-2">
+  <div class="col-lg-8">
+<div class="swiper mySwiper2 bg-dark">
+<div class="swiper-wrapper"style="width:300px;"  >
+  <div class="swiper-slide"   >
+    <img src="./images/pic 2.jpg" class="image img-fluid "/>
+  </div>
+  <div class="swiper-slide" class="image  img-fluid">
+    <img src="./images/pic 2.jpg"  class="image  img-fluid"/>
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/pic 2.jpg" class="image  img-fluid"/>
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/pic 2.jpg" class="image  img-fluid"/>
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/pic 2.jpg" class="image  img-fluid"/>
+  </div>
+
+</div>
+
+</div>
+<div thumbsSlider="" class="swiper mySwiper m-2" >
+<div class="swiper-wrapper">
+  <div class="swiper-slide">
+    <img src="./images/pic 2.jpg" class="img-fluid" />
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/pic 2.jpg" class="img-fluid"/>
+  </div>
+  <div class="swiper-slide ">
+    <img src="./images/pic 2.jpg" class="img-fluid" />
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/pic 2.jpg" class="img-fluid"/>
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/pic 2.jpg" class="img-fluid"/>
+  </div>
+
+</div>
+<div class="swiper-button-next" ></div>
+<div class="swiper-button-prev"></div>
+
+</div>
+
+
+<div class="details m-2 p-3">
+
+  <div class="row">
+    <div class="col-md-4" >
+      <h5 id="description"  >Description</h5>
+    </div>
+ 
+        <div class="col-md-4">
+          <h5 id="facilities" >Facilities</h5>
+        </div>
+
+        <div class="col-md-4">
+          <h5 id="pricing" >Pricing</h5>
+        </div>
+  </div>
+ 
+
+  <p class="d1">***Seller Financing available–No Credit / Employment Checks–MANUFACTURED HOMES ALLOWED!***
+
+ 
+
+    Imagine your own 4.573 acres in Costilla County near San Luis in San Luis North Estates! This parcel is only minutes away from San Luis via V 5 to the south. Just imagine living in a place where you can smell the fresh air in the morning and enjoy the scenery of the vast Colorado mountain ranges. This is a great fit for anyone who wants to have a quiet and peaceful place to live in or escape to. Just clear nights skies for starry views as far as the eyes can see.
+    
+    
+    There are many historical, cultural and recreational activities in the area. Explore Monte Vista & Alamosa Wildlife Refuges, San Luis Lake State Park, Great Sand Dunes National Park & Preserve, Penitente Canyon, Thunder Mountain Speedway, Cumbres & Toltec Scenic Railroad, Colorado Gator Farm, Del Norte, Monte Vista, and more.
+    
+    
+    </p>
+  <p class="d2 show-p2">Water:
+    
+    Can drill a well.  <br>
+    Electricity:
+    <br>
+    No power lines nearby.
+    
+    <br>
+    Property is gently rolling.
+    Road Access:
+    <br>
+   
+    Flood Zone:
+    <br>
+    No flood data available online.
+    <br>
+    Legal Description:
+    <br>
+    San Luis North Estates Filing 1 Lot 248
+  </p>
+  <p class="d3  show-p3">Cash Price: 7lacs
+  
+    Doc & Reservation Fee: 1lacs
+    <br>
+    Total: 8lacs
+    <br>
+    Deposit Amount: 8lacs
+ 
+  </div>
+  
+  </div>
+
+</div>
+
+</div>
+
+
+<!--Map-->
+
+
+<div class="col-md-4">
+  <section class="map-section">
+
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.297349303073!2d91.87032581441198!3d24.92193834892983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054df9f7cbd6b%3A0x6d421249374634cd!2sAirport%20Rd%2C%20Sylhet%2C%20Bangladesh!5e0!3m2!1sen!2smm!4v1635412827540!5m2!1sen!2smm"  height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+  
+<div class="seller-details ">
+    <div class="card">
+   
+        <div class="card-header">
+
+          <div class="allDetails">
+            <div class="">
+              <img src="./images/person3.jpg" class="seller-img">
+            </div>
+            <div class=" text-center">
+              <div class="Seller">
+               <h6>Seller</h6>
+               <span>XYZ Jahan</span>
+               <span>Phone:01713344660</span>
+               <span>Email:xyzJahan@gmail.com</span>
+               </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  
+
+
+</div>
+
+
+  <!--Contact Seller-->
+   <div class="contact-seller m-2">
+     <h2 class="contact-seller-title">Contact Seller</h2>
+  <div class="contact-seller-form">
+    <form class="form-group">
+
+      <input type="text" name="name" placeholder="Your Name" class="form-control">
+      <input type="email" name="email" placeholder="Your Email" class="form-control">
+
+
+      <input type="number" name="phone" placeholder="Your phone" class="form-control">
+
+
+   <textarea  rows="10" placeholder="Message" class="form-control"></textarea>
+   <button class="form-control  mt-4">Send</button>
+
+
+    </form>
+
+    
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+         
+   <!--Footer Section-->
+        
+  <footer id="main-footer" >
+     <div class="footer-container">
+       <h5 class="text-center">Follow us on</h5>
+         <div class="row">
+          <div class=" col-md-12 text-center" id="icons">
+           <a href="www.facebook.com"><span><i class="fab fa-facebook-square text-white m-4"></i></span>    </a>
+            <a href="www.instagram.com"> <span><i class="fab fa-instagram text-white m-4"></i></span> </a>
+              <a href="www.gmail.com"> <span> <i class="fas fa-envelope text-white m-4"></i>  </span></a>
+             </div>
+           </div>
+         <p class="text-center"> Copyright &copy; 2021  Liberty  Land Sales.All Rights Reserved</p>
+       </div>
+         </footer>
+
+
+
+         <a href="#" class="scrollup" id="scroll-up">
+           <i class="ri-arrow-up-line scrollup__icon"></i>
+         </a>
+          
+         <script src="js/swiper-bundle.min.js"></script>
+         <script src="js/scrollreveal.min.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+     
+     
+       <script>
+          
+            var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+          });
+          var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+              swiper: swiper,
+            },
+          });
+          var facilities= document.querySelector("#facilities");
+        var description= document.querySelector("#description");
+        var pricing = document.querySelector("#pricing");
+        description.addEventListener("click",function(){
+        
+           
+        document.querySelector(".d1").style.display="inline";
+        description.style.backgroundColor="cadetblue";
+        pricing.style.backgroundColor="white";
+        facilities.style.backgroundColor="white";
+        
+        document.querySelector(".d2").classList.add("show-p2");
+        document.querySelector(".d3").classList.add("show-p3");
+        
+        })
+        
+        
+        facilities.addEventListener("click",function(){
+        document.querySelector(".d2").classList.toggle("show-p2");
+        facilities.style.backgroundColor="lightgreen";
+        pricing.style.backgroundColor="white";
+        
+        description.style.backgroundColor="white";
+        document.querySelector(".d1").style.display="none";
+        document.querySelector(".d3").classList.add("show-p3");
+        })
+        pricing.addEventListener("click",function(){
+        
+        document.querySelector(".d2").classList.add("show-p2");
+        pricing.style.backgroundColor="skyblue";
+        facilities.style.backgroundColor="white";
+        description.style.backgroundColor="white";
+        document.querySelector(".d1").style.display="none";
+        document.querySelector(".d3").classList.toggle("show-p3");
+        
+        
+        })
+      
+
+
+          console.log("muna");
+console.log("rahat");
+var navToggle = document.querySelector(".navbar-toggler-icon");
+var navClose = document.querySelector("#nav-close");
+var advertiseClose = document.querySelector(".close-button");
+var advertise=document.querySelector("#advertise");
+var Home=document.querySelector("#home");
+var contactCloseButton= document.querySelector(".contact-close-button");
+var down= document.querySelectorAll(".down");
+var cardBody= document.querySelectorAll(".card-body");
+var upper= document.querySelectorAll(".upper");
+var area = document.querySelector("#area");
+var contact = document.querySelector("#contact");
+
+var Card= document.querySelector(".Card");
+var leftButton = document.querySelector("#left-button");
+console.log("muna");
+console.log("munaaaaaaaaaaa");
+var homeSection = document.querySelector("home-section");
+window.addEventListener("scroll",function(){
+
+
+var Navbar = document.querySelector("nav");
+
+if(pageYOffset > 0 || pageXOffset >0){
+  Navbar.style.backgroundColor="black";
+  Navbar.style.opacity="1";
+}
+else{
+Navbar.style.backgroundColor="black";
+Navbar.style.opacity= "0.6";
+}
+
+})
+
+navToggle.addEventListener("click",function(){
+
+
+document.querySelector(".nav-menu").classList.add("show-menu");
+
+
+});
+navClose.addEventListener("click",function(){
+document.querySelector(".nav-menu").classList.remove("show-menu");
+
+});
+
+
+advertise.addEventListener("click",function(){
+
+document.querySelector(".modal-section").classList.remove("show-modal");
+document.querySelector(".overlay").classList.remove("hidden");
+document.querySelector(".show-logIn").style.display="none";
+document.querySelector(".show-signIn").style.display="none";
+document.querySelector(".contact-us").classList.add("show-contact");
+})
+
+advertiseClose.addEventListener("click",function(){
+
+document.querySelector(".modal-section").classList.add("show-modal");
+document.querySelector(".overlay").classList.add("hidden");
+
+})
+const overlay = document.querySelector(".overlay");
+overlay.addEventListener("click",function(){
+document.querySelector(".modal-section").classList.add("show-modal");
+overlay.classList.add("hidden");
+
+})
+if(!advertise){
+document.querySelector(".modal-section").classList.add("show-modal");
+
+
+}
+/* for advertise*/
+const signin = document.querySelector("#signIn");
+signin.addEventListener("click", function(){
+document.querySelector(".show-signIn").style.display="block";
+document.querySelector(".overlay").classList.remove("hidden");
+document.querySelector(".show-logIn").style.display="none";
+document.querySelector(".modal-section").classList.add("show-modal");
+document.querySelector(".contact-us").classList.add("show-contact");
+
+})
+
+overlay.addEventListener("click",function(){
+
+
+document.querySelector(".show-signIn").style.display="none";
+overlay.classList.add("hidden");
+
+
+})
+contact.addEventListener("click",function(){
+document.querySelector(".contact-us").classList.remove("show-contact");
+document.querySelector(".overlay").classList.remove("hidden");
+document.querySelector(".show-logIn").style.display="none";
+document.querySelector(".show-signIn").style.display="none";
+document.querySelector(".modal-section").classList.add("show-modal");
+
+})
+contactCloseButton.addEventListener("click",function(){
+document.querySelector(".contact-us").classList.add("show-contact");
+document.querySelector(".overlay").classList.add("hidden");
+
+})
+overlay.addEventListener("click",function(){
+
+
+document.querySelector(".contact-us").classList.add("show-contact");
+overlay.classList.add("hidden");
+
+
+
+})
+/* Contact support*/
+
+
+var signIn = document.querySelector("#sign-in");
+
+signIn.addEventListener("click", function(){
+document.querySelector(".show-signIn").style.display="block";
+document.querySelector(".overlay").classList.remove("hidden");
+document.querySelector(".show-logIn").style.display="none";
+document.querySelector(".modal-section").classList.add("show-modal");
+document.querySelector(".contact-us").classList.add("show-contact");
+
+})
+
+document.querySelector(".signIn-close-button").addEventListener("click",function(){
+document.querySelector(".show-signIn").style.display="none";
+document.querySelector(".overlay").classList.add("hidden");
+
+
+})
+overlay.addEventListener("click",function(){
+
+
+document.querySelector(".show-signIn").style.display="none";
+overlay.classList.add("hidden");
+
+
+
+})
+
+
+var logIn= document.querySelector("#log-in");
+
+logIn.addEventListener("click",function(){
+document.querySelector(".show-logIn").style.display="block";
+document.querySelector(".overlay").classList.remove("hidden");
+document.querySelector(".show-signIn").style.display="none";
+document.querySelector(".modal-section").classList.add("show-modal");
+document.querySelector(".contact-us").classList.add("show-contact");
+console.log("hi");
+})
+document.querySelector(".logIn-close-button").addEventListener("click",function(){
+
+document.querySelector(".show-logIn").style.display="none";
+document.querySelector(".overlay").classList.add("hidden");
+
+
+})
+overlay.addEventListener("click",function(){
+
+
+document.querySelector(".show-logIn").style.display="none";
+overlay.classList.add("hidden");
+
+
+
+})
+
+console.log(down.length);
+
+
+area.addEventListener("click",function(){
+
+document.querySelector(".area").classList.toggle("hidden");
+alert("If you click area button once and your area section is not removing then click the area section again")
+
+})
+
+
+/* For area selection*/ 
+function laO(src){
+window.location=src;
+}
+function laT(src){
+window.location=src;
+}
+function laH(src){
+window.location=src;
+}
+function laF(src){
+window.location=src;
+}
+function laI(src){
+window.location=src;
+}
+function laS(src){
+window.location=src;
+}
+
+function laA(src){
+window.location=src;
+}
+
+
+
+
+
+
+    </script>
+        
+        
+                </script>
+     <script
+       src="https://code.jquery.com/jquery-3.6.0.min.js"
+       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+       crossorigin="anonymous"
+     ></script>
+   
+    <!--<script
+       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+       crossorigin="anonymous"
+     ></script>-->
+     <script
+       src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+       crossorigin="anonymous"
+     ></script>
+
+    
+ </body>
+</html>

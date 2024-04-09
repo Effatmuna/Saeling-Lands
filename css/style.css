@@ -1,0 +1,2702 @@
+@import url(./fonts.css);
+@import url(./partials/_variables.css);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+  
+}
+.container {
+  
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:250vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 5;
+
+}
+.hidden{
+  display: none;
+}
+
+
+
+
+
+div {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+div .navbar-brand {
+  font-size: 30px;
+  font-weight: lighter;
+  height: 62.6px;
+  margin-left: 10px;
+}
+nav{
+     background-color: #2F6D7B;
+     opacity: 1;
+}
+.sticky{
+  background-color: rgb(158, 57, 57);
+  
+}
+
+.nav__dark {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  position: absolute;
+  left: 7rem;
+  bottom: 10rem;
+}
+
+.nav-menu .button {
+  
+  color: white;
+  font-weight: bold;
+  margin-right: 15px;
+  margin-top: 4px;
+  border-radius: 0.5rem;
+  text-decoration: none;
+
+}
+.navbar .navbar-toggler{
+  color: white;
+  margin-right: 15px;;
+
+}
+.nav-item .nav-link {
+  text-align: right;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+.nav-link:hover{
+ background-color: palegreen;
+  transition-duration: 1s;
+
+ }
+ .dropdown{
+  display: flex;
+margin-left: 2px;
+}
+
+.Active{
+
+  background: white;
+}
+.card-container .latest{
+  margin-top: 40px;
+}
+
+/*#Sy{
+  background: #2F6D7B;
+}*/
+.show-menu {
+  right: 0;
+}
+
+.home-section {
+  background: url("back2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+
+}
+
+
+
+.home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 600px;
+
+
+}
+
+.state {
+  text-align: center;
+  margin-top: -200px;
+  background:rgb(5, 5, 5);
+  height: 70px;
+   margin-right:25px;
+   margin-left:25px;
+  opacity: 0.6;
+  padding-top: 20px;
+  display: block;
+  
+}
+.state .division {
+  width: 210px;
+    background: rgb(5, 5, 5);
+  
+    color: white;
+  
+}
+.state .district {
+  width: 210px;
+  background: rgb(5, 5, 5);
+  color: white;
+  margin-right: 15px;
+  border:1px solid white;
+}
+.state .upozilla {
+  width: 210px;
+    background: rgb(5, 5, 5);
+    margin-right: 15px;
+    color: white;border:1px solid white;
+}
+.state .size {
+  width: 210px;
+    background: rgb(5, 5, 5);
+    margin-right: 15px;
+    color: white;border:1px solid white;
+}
+.state a {
+  width: 100px;
+  padding: 5px;
+}
+/*Advertise*/
+
+.modal-section{
+
+  margin:10px;
+  background-color:rgb(123, 174, 187);
+  width:450px;
+  z-index: 6;
+  position: absolute;
+  left:450px;
+  padding:20px;
+  top:20%;
+  
+}
+.modal-section .help{
+  text-align: justify;
+  font-weight: lighter;
+  
+}
+.modal-section .modal-contacts{
+
+  margin-left: 97px;
+  font-weight: lighter;
+  font-family: "Roboto";
+}
+.modal-section .close-button{
+
+  margin-left:375px;
+   padding:10px;
+  cursor: pointer;
+}
+.modal-section .sign-In{
+      margin-left: 175px;
+      border: none;
+      padding:5px;
+      font-weight: bold;
+      cursor: pointer;
+}
+.show-modal{
+  display: none;
+
+}
+/*section{display: -webkit-flex;display: -moz-flex;display: -ms-flex; display: flex;flex-direction: column;align-items: center;}*/
+
+/*Card section*/
+.card-section-home{
+  margin-top: 55px;
+  z-index: 1;
+}
+.view-more{
+  margin-left: 135px;
+  margin-bottom: 5px;
+}
+
+
+.do-want-section{
+     background: url("back2.jpg");
+     height: 370px;
+     background-size: cover;
+     background-repeat: none;
+    background-attachment:fixed ;
+     background-position: initial;
+     background-position: center;
+
+}
+.do-container{
+  display: flex;
+  justify-content: center;
+  flex:1 1 200px;
+  width:100%;
+  flex-direction: row;
+  
+}
+.do-container .buy-sell{
+   display: flex;
+   width:40%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin:0px 0px 5px 0px;
+  margin-top: -70px;
+  padding: 5px;
+  
+}
+.do-container .links{
+ background-color: white;
+ margin-top: -2px;
+ padding:10px;
+ opacity: 0.7;
+ height:270px;
+}
+.buy-sell .for-sale{
+     background:#2C2727;
+     padding:3px;
+     text-align: center;
+     font-size: 13px;
+     color: white;
+     font-weight: lighter;
+}
+
+.buy-sell .for-buy{
+  background:#2F6D7B ;
+      padding:3px;
+      text-align: center;
+      color: white;
+      font-size: 13px;
+      font-weight: lighter;
+}
+.for-sale .fas{
+  padding: 5px;color: white;
+ font-size: 25px;
+}
+.for-buy .fas{
+  padding: 5px;color: white;
+ font-size: 25px;
+}
+.buy-sell .for-sale h4,
+.buy-sell .for-buy h4{
+  font-size: 16px;
+      font-weight: bold;
+      padding:5px;
+
+}
+/*Area*/
+
+
+
+.area .Division,.District, .Upozilla, .SizeOfLand{
+  width:120px;
+  background: rgb(5, 5, 5);
+  color: white;
+  margin: -5px;
+   border:1px white solid;
+}
+
+.hidden{
+
+  display: none;
+
+
+}
+
+
+
+
+/*Contact Us Modal*/
+
+.contact-us{
+  background: indigo;
+  margin:10px;
+  background: #02031C;
+  height:540px;
+  z-index: 6;
+  position: absolute;
+  left:440px;
+  padding:20px;
+  top:30%;
+  
+  
+}
+.form-group{
+    color: white;
+
+  
+}
+.form-group h5,.contact-modal h4{
+  font-size: 16px;
+}
+.form-group .send-button{
+  color: white;border: 1px solid skyblue;
+  border-radius: 15px;
+}
+.contact-modal{
+  color: white;
+  
+}
+.show-contact{
+  display: none;
+}
+
+.contact-modal .inputs{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.contact-us .contact-close-button{
+
+  margin-left:380px;
+   padding:10px;
+  cursor: pointer;color: white;
+}
+.sign-in{
+
+
+  margin:10px;
+  background: #2F6D7B;
+   width:484px;
+  height:780px;
+  z-index: 5;
+  position: absolute;
+  left:440px;
+  padding:20px;
+  top:15%;
+  padding:30px;
+    border-radius: 10px;
+
+}
+.sign-in .file{
+background-color: white;
+   color: black;
+   width:100%;
+    padding:5px;
+    border-radius: 3px;
+   z-index: 0;
+  text-align: left;
+
+}
+ .show-signIn{
+    display: none;
+    
+}
+.sign-In{
+  background: aliceblue;
+}
+
+
+.sign-in .signIn-close-button{
+
+  margin-left:380px;
+   padding:5px;
+  cursor: pointer;
+  color: white;
+
+}
+
+.log-in{
+
+
+  margin:10px;
+  background: #2F6D7B;
+   width:484px;
+  height:310px;
+  z-index: 5;
+  position: absolute;
+  left:440px;
+  padding:20px;
+  top:30%;
+  padding:30px;
+   border-radius: 10px;
+   
+}
+.log-in .logIn-close-button{
+
+  margin-left:380px;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+
+}
+.show-logIn{
+
+  display: none;
+}
+.text-white{
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+/*Footer*/
+
+footer{
+  
+  padding:10px;
+  height:180px;
+  background-color: black;
+  
+}
+.footer-container{
+  color: white;
+  margin-top: 5px;
+  text-align: center;
+}
+
+   footer a{text-decoration: none;}
+
+footer p{font-weight: lighter;}
+
+
+
+@media(max-width:1000px){
+  
+.area{
+
+  position: absolute;
+  top:52px;
+  left:620px;
+  z-index: 1;
+  
+   
+}
+
+  .navbar{
+    border-bottom: 4px white solid;
+     opacity:0.6;
+  }
+
+  .nav-menu {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    box-shadow: 5px 5px 2px black;
+    padding: 3rem;
+    transition: 0.5s;
+    flex-direction: column;
+    opacity: 1 !important;
+    
+  }
+.navbar-nav{
+  margin-right: 340px;
+}
+
+ .nav-menu .button{
+  
+  margin-top: 10px;
+  position: fixed;
+
+ }
+
+
+
+ .nav__close {
+  position: absolute;
+  top: 1.75rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: cornsilk;
+  padding: 5px;
+}
+
+ .show-menu{
+       right:0;
+ }
+ 
+ .nav-menu .nav-link:hover{
+  
+  transition-duration: 1s;
+  
+   
+ }
+ .state .division {
+  width: 105px;
+  background: rgb(5, 5, 5);
+  color: white;
+  border:1px solid white;
+  margin-left: -10px;
+}
+.contact-us{
+  background: indigo;
+  margin:10px;
+  background: #02031C;
+  height:540px;
+  z-index: 6;
+  position: absolute;
+  left: 115px;
+  padding:20px;
+  top:30%;
+  width:350px;
+  
+}
+.contact-us .contact-close-button{
+
+  margin-left:270px;
+   padding:10px;
+  cursor: pointer;color: white;
+}
+}
+
+
+@media(max-width:768px){
+  .nav-menu ul li a:hover{
+   background:tomato;
+    width:150px;
+  
+    transition-duration:0.2s;
+    text-align: center;
+   }
+   .area{
+  
+    position: absolute;
+    top:60px;
+    left:520px;
+    z-index: 2;
+    
+  } 
+ 
+.Log{
+  margin-bottom: 0px;
+}
+  .state {
+    
+    margin-bottom: 10px;
+    background: rgb(5, 5, 5);
+    height: 85px;
+    text-align: center;
+    opacity: 0.6;
+    font-size: 15px;
+    padding-top: 15px;
+    
+  }
+  .state .division {
+    width: 105px;
+    background: rgb(5, 5, 5);
+    color: white;
+    border:1px solid white;
+    margin-left: 10px;
+  }
+  .state .district {
+    width: 105px;  
+    background: rgb(5, 5, 5);
+    color: white;
+    margin-right: 10px;
+    border:1px solid white;
+  }
+  .state .upozilla {
+    width: 105px; 
+    background: rgb(5, 5, 5);
+    color: white;
+    margin-right: 10px; 
+  
+     border:1px solid white;
+  
+  }
+  .state .size {
+    width: 105px;
+    background: rgb(5, 5, 5);
+    color: white;   
+      margin-right: 10px;
+      border:1px solid white;
+  }
+  .state button {
+    width: 100px;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom:10px;
+  
+  }
+ #Search{
+   margin-top:-5px;
+ }
+  .do-container .buy-sell{
+    width:250px;
+    flex-direction: row;
+    height: 40%;
+    position: relative;
+    top:110px;
+  }
+ 
+ 
+  
+  .links .useful h3,
+  .links .contacts h3,
+  .links .about h3{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .links .contacts p{
+    font-weight: lighter;
+    font-size: 13px;
+  }
+  .links .useful a, .links .about a{
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .show-menu {
+    right: 0;
+  }
+ 
+ 
+}
+@media(max-width: 670px){
+  .area{
+  
+    position: absolute;
+    top:60px;
+    left:460px;
+    z-index: 2;
+    
+  } 
+ 
+ 
+
+
+}
+@media(max-width:600px){
+
+  .nav-menu .Log{
+    margin-top: 0px;
+  }
+  .nav-menu ul li a:hover{
+    background: palegreen;
+     width:150px;
+     transition: ease-in-out;
+     transition-duration:0.2s;
+     text-align: center;
+    }
+  .area{
+  
+    position: absolute;
+    top:60px;
+    left:420px;
+    z-index: 2;
+    
+  } 
+  .do-container .links{
+    width:150px;
+    background-color: white;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    height: 70%;
+    position:relative;
+    top:60px;
+    margin: 0px 5px 0px 5px;
+  }
+}
+
+
+@media(max-width:578px){
+
+
+  .nav-menu .log{
+    text-align: center;
+     margin-top: 0px;
+     width:75px;
+     padding:5px;
+  }
+.nav-menu .Sign{
+  margin-top: 0px;
+  padding:5px;
+  width:75px;
+}
+.nav-menu ul li a:hover{
+  background: tomato;
+   width:150px;
+  
+   transition-duration:0.2s;
+   text-align: center;
+  }
+
+
+  .state {
+    
+    margin-bottom: 70px;
+    background: rgb(5, 5, 5);
+    height: 130px;
+    text-align: center;
+    opacity: 0.6;
+    font-size: 15px;
+    padding-top: 15px;
+    
+  }
+  .state .division {
+    width: 115px;
+    background: rgb(5, 5, 5);
+    color: white;
+    border:1px solid white;
+    margin: 5px;margin-left: 10px;;
+  }
+  .state .district {
+    width: 115px;  
+    background: rgb(5, 5, 5);
+    color: white;
+    border:1px solid white;
+  }
+  .state .upozilla {
+    width: 115px; 
+    background: rgb(5, 5, 5);
+    color: white;margin:5px;
+     border:1px solid white;margin-left: 10px;;
+  
+  }
+  .state .size {
+    width: 115px;
+    background: rgb(5, 5, 5);
+    color: white;   
+    border:1px solid white;
+  }
+  .state button {
+    width: 100px;
+    border-radius: 10px;
+  
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom:8px;overflow: hidden;
+  }
+  .do-container .buy-sell{
+    width:250px;
+    margin-right:10px;
+    position: relative;
+    
+    left:5px;
+  } 
+  .do-container .links{
+    width:150px;
+    background-color: white;
+    opacity: 0.7;
+    padding: 10px;
+    flex-wrap: wrap;
+    height: 70%;
+    position:relative;
+    top:50px;
+    margin-right: 10px;
+  
+  }
+
+  .buy-sell .for-sale{
+  
+    text-align: center;
+    font-size: 11px;
+    background:#2C2727 ;color: white;font-weight: lighter;
+   
+  
+  } .buy-sell .for-buy{
+    background: #2F6D7B ;
+    text-align: center;
+    font-size: 11px;font-weight: lighter;
+  
+  }
+  .buy-sell .for-sale h4,
+  .buy-sell .for-buy h4{
+
+        font-size: 14px;
+        font-weight: bold;
+
+  }
+  .for-sale a, .for-buy a{
+    font-size: 20px;
+     overflow: hidden;color: white;
+  }
+
+
+}
+ @media(max-width:540px){
+  .area{
+  
+    position: absolute;
+    top:400px;
+    left:330px;
+    z-index: 2;
+    
+}
+.nav-menu ul li a:hover{
+  background: tomato;
+   width:150px;
+   text-align: center;
+  }
+ }
+
+
+
+@media(max-width:500px){
+  .nav-menu .Log{
+    margin-top: 10px;
+  }
+  .nav-menu ul li a:hover{
+    background: tomato;
+     width:150px;
+    
+    
+     text-align: center;
+    }
+  .state{
+    position: relative;
+    top:-120px;
+  }
+  .do-container .links{
+    width:150px;
+    background-color: white;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    height: 70%;
+    position:relative;
+    top:50px;
+    margin: 0px 5px 0px 5px;
+  }
+  .area{
+  
+    position: absolute;
+    top:400px;
+    left:300px;
+    z-index: 2;
+    
+}
+
+}
+@media(max-width:450px){
+  .area{
+  
+    position: absolute;
+    top:140px;
+    left:260px;
+    z-index: 2;
+    
+}
+.nav-menu ul li a:hover{
+  background: tomato;
+   width:150px;
+   
+   transition-duration:0.2s;
+   text-align: center;
+  }
+ 
+.sign-in{
+
+
+  margin:10px;
+  background: #2F6D7B;
+   width:300px;
+  height:770px;
+  z-index: 5;
+ 
+ 
+  top:15%;
+  left:50px;
+ 
+}
+.sign-in .signIn-close-button{
+
+  margin-left:220px;
+   padding:5px;
+  cursor: pointer;
+  color: white;
+
+}
+.log-in{
+  top:20%;
+  left:65px !important;
+  width:270px !important;
+ 
+}
+.log-in .logIn-close-button{
+    
+  margin-left:150px !important;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+
+}
+.contact-us{
+  background: indigo;
+  margin:10px;
+  background: #02031C;
+  height:540px;
+  z-index: 6;
+  position: absolute;
+  left: 55px;
+  padding:20px;
+  top:15%;
+  width:300px;
+  
+}
+.contact-us .contact-close-button{
+
+  margin-left:230px;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+}
+.overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:200vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 5;
+
+}
+}
+
+@media(max-width:414px){
+ 
+  .nav-menu .button .Sign{
+    text-align: center;
+    
+    
+  }
+  .nav-menu .button .Log{
+    text-align: center;
+     margin-top: 10px;
+    
+  }
+  .nav-menu .nav-item:hover{
+  
+    transition-duration: 1s;
+     
+   }
+   .nav-menu ul li a:hover{
+    background: tomato;
+     width:150px;
+     
+     transition-duration:0.2s;
+     text-align: center;
+    }
+
+
+   .dropdown{
+      
+    margin-left: -35px;
+    }
+    #logOut{
+      position: relative;
+      right:50px;
+      padding: 14px;
+  
+    }
+    .area{
+  
+      position: absolute;
+      top:140px;
+      left:230px;
+      z-index: 2;
+      
+  }
+  .contact-us{
+    
+    position: absolute;
+       
+    top:50%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    
+    width:300px;
+    
+  }
+  .contact-us .contact-close-button{
+
+    margin-left:230px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  }
+  .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:280vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  .sign-in{
+    left:30px;
+    height:780px;
+    
+  }
+  .log-in{
+    left:20px;
+    width:400px;
+  }/*
+  .log-in .logIn-close-button{
+      
+    margin-left:255px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  
+  }*/
+  
+
+    .state {
+      
+      position: relative;
+      bottom:250px;
+      background: rgb(5, 5, 5);
+      height: 130px;
+      text-align: center;
+      opacity: 0.6;
+      font-size: 15px;
+      padding: 15px;
+      
+    }
+    .state .division {
+      width: 105px;
+      background: rgb(5, 5, 5);
+      color: white;
+      border:1px solid white;
+    }
+    .state .district {
+      width: 105px;  
+      background: rgb(5, 5, 5);
+      color: white;
+    
+      border:1px solid white;
+    }
+    .state .upozilla {
+      width: 105px; 
+      background: rgb(5, 5, 5);
+      color: white;
+       
+       border:1px solid white;
+    
+    }
+    .state .size {
+      width: 105px;
+      background: rgb(5, 5, 5);
+      color: white;   
+    
+        border:1px solid white;
+    }
+   
+    .state button {
+      width: 100px;
+      border-radius: 10px;
+      padding: 2px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top:8px;
+      margin-left: 10px;;
+    }
+   
+    
+     .card-container .best{
+       color: white;
+       font-size: 20px;
+       
+       font-weight: 800;
+       background-color: green;
+       
+       padding: 10px;
+       position: relative;
+       left:32px;
+       top:5px;
+     }
+     .card-container .latest{
+       margin-top: 60px;
+       font-size:20px;margin-left: 25px;
+     }
+    
+    
+    .do-container .links{
+      width:150px;
+      background-color: white;
+      opacity: 0.7;
+      flex-wrap: wrap;
+      height: 70%;
+      position:relative;
+      top:50px;
+      margin: 0px 5px 0px 5px;
+    }
+  }
+
+@media(max-width:393px){
+  .state{
+    padding:10px;
+    height:125px;
+
+  }
+  .card-section-home{
+    margin-top: 80px;
+  }
+  /*.sign-in{
+    left:30px;
+    height:780px;
+  }*/
+  .overlay{
+    min-height: 260vh;
+  }
+  .log-in{
+    left:45px !important;
+    width:300px;
+  }
+  .log-in .logIn-close-button{
+      
+    margin-left:230px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  
+  }
+  .modal-section{
+    left:47.5%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:340px;
+
+  }
+  .modal-section .close-button{
+    margin-left: 260px;
+  }
+  .modal-section .modal-contacts{
+
+    margin-left: 25px;
+    font-weight: lighter;
+    font-family: "Roboto";
+  }
+  .modal-section .sign-In{
+    margin-left: 130px;
+  }
+}
+@media(max-width:360px){
+  #CardSection1{
+    margin-top: 360px;
+  }
+  .nav-menu .nav-item:hover{
+   
+    transition-duration: 0.1s;
+    transform: translate(10px);
+     
+    }
+  #logOut{
+    padding: 14px;
+  }
+  .nav-menu ul li a:hover{
+    background: tomato;
+     width:100px;
+    
+     transition-duration:0.2s;
+     text-align: center;
+    }
+
+
+  .area{
+  
+    position: absolute;
+    top:130px;
+    left:220px;
+    z-index: 2;
+    
+} 
+.overlay{
+  min-height: 420vh;
+}
+.modal-section{
+
+  margin:10px;
+  background-color:rgb(123, 174, 187);
+  width:300px;
+  z-index: 6;
+  position: absolute;
+ 
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.modal-section .help{
+  text-align: center;
+  font-weight: lighter;
+  
+}
+.modal-section .modal-contacts{
+
+  margin-left: 0px;
+  font-weight: lighter;
+  font-family: "Roboto";
+}
+.modal-section .close-button{
+
+  margin-left:220px;
+   padding:10px;
+  cursor: pointer;
+}
+.modal-section .sign-In{
+      margin-left: 105px;
+      border: none;
+      padding:5px;
+      font-weight: bold;
+      cursor: pointer;
+}
+
+.sign-in{
+
+
+  margin:10px;
+  background: #2F6D7B;
+   width:300px;
+  height:780px;
+  z-index: 5;
+  position: absolute;
+  left:20px;
+  padding:20px;
+  top:15%;
+  padding:30px;
+    border-radius: 10px;
+
+}
+.sign-in .signIn-close-button{
+
+  margin-left:220px;
+   padding:5px;
+  cursor: pointer;
+  color: white;
+
+}
+.log-in{
+  top:150px;
+  left:35px !important;
+  width:260px;
+}
+.log-in .logIn-close-button{
+    
+  margin-left:180px;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+
+}
+
+
+.contact-us{
+ 
+  top:60%;
+   
+  left: 47%;
+  transform: translate(-50%,-50%);
+  width:300px;
+  
+}
+.contact-us .contact-close-button{
+
+  margin-left:230px;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+}
+
+
+ .state{
+     position: relative;
+     top:165px;
+     z-index: 1;
+     margin-top: -550px;
+    height: 130px;
+   }
+
+  .state .division {
+    width: 105px;
+    background: rgb(5, 5, 5);
+    color: white;
+    margin-right: 5px;border:1px solid white;
+    margin-left: 5px;
+  }
+  .state .district {
+    width: 105px;  
+    background: rgb(5, 5, 5);
+    color: white;
+    margin-right: 10px;
+    border:1px solid white;
+    
+  }
+  .state .upozilla {
+    width: 105px; 
+    background: rgb(5, 5, 5);
+    color: white;
+    margin-right: 5px; 
+     border:1px solid white;
+     margin-left: 5px;
+  }
+  .state .size {
+    width: 105px;
+    background: rgb(5, 5, 5);
+    color: white;   
+      margin-right: 10px;
+      border:1px solid white;
+  }
+  .state button {
+    width: 100px;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top:8px;
+  }
+  .do-container .buy-sell{
+    width:250px;
+    flex-direction: column;
+    position: relative;
+    left:5px;
+    bottom:-10px;
+    color: white;
+    padding:0px 10px 0px 10px;
+    
+  
+  }
+  .do-container .links{
+    width:150px;
+    background-color: white;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    height: 70%;
+    position:relative;
+    top:35px;
+    margin: 0px 5px 0px 5px;
+  }
+  .buy-sell .for-sale{
+    
+    text-align: center;
+    font-size: 11px;
+    background:#2C2727 ;
+    color: white;
+    font-weight: lighter;
+    padding: 0px;
+  
+  } .buy-sell .for-buy{
+    background: #2F6D7B ;
+    text-align: center;
+    font-size: 11px;font-weight: lighter;overflow: hidden;
+     padding:5px;
+  }
+  .buy-sell .for-sale h4,
+.buy-sell .for-buy h4{
+       font-size: 16px;
+      font-weight: bold;
+      padding: 5px;
+
+}
+.home-section {
+  background: url("back2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+}
+
+
+ .card-container .best{
+   color: white;
+   font-size: 20px;
+   
+   font-weight: 800;
+   background-color: green;
+   
+   padding: 10px;
+   position: relative;
+   left:32px;
+   top:5px;
+ }
+ .card-container .latest{
+   margin-top: 60px;
+   font-size:20px;margin-left: 25px;
+ }
+ 
+
+  
+}
+/*@media(max-width:370px){
+  .area{
+  
+    position: absolute;
+    top:350px;
+    left:220px;
+    z-index: 2;
+    
+} 
+}*/
+
+@media(max-width:323px){
+
+  .nav-menu{
+    height:1637px;
+  margin-right: 5px;
+
+  }
+  .area{
+  
+    position: absolute;
+    top:265px;
+    left:185px;
+    z-index: 2;
+    
+} 
+ .state{
+  background: rgb(5, 5, 5) !important;
+  height: 170px !important;
+  display: block;
+ }
+ .state .division {
+  width: 200px;
+    background: rgb(5, 5, 5);
+    margin-right: 10px;
+    color: white;
+}
+.state .district {
+  width: 200px;
+  background: rgb(5, 5, 5);
+  color: white;
+  margin-right: 3px;
+  border:1px solid white;
+}
+.state .upozilla {
+  width: 200px;
+    background: rgb(5, 5, 5);
+    margin-right: 10px;
+    color: white;border:1px solid white;
+}
+.state .size {
+  width: 200px;
+    background: rgb(5, 5, 5);
+    margin-right: 3px;
+    color: white;border:1px solid white;
+}
+.state a {
+  width: 100px;
+  margin-top: 5px;
+  padding: 5px;
+}
+#Search{
+  margin-top: -10px;
+}
+  .card-section-home{
+    
+    z-index: 0;
+    max-height: 750px;
+  
+  }
+
+  #CardSection1{
+    margin-top: 300px;
+    min-height: 350px;
+  }
+  .do-want-section{
+    height:500px;
+    display: block;
+  
+  }
+  .do-want-section .for-buy{
+    
+    overflow: hidden;
+    z-index: 0;
+    margin-top: -35px;
+    display: block;
+    height: 220px;
+  
+ }
+   .do-want-section .for-sale{
+    
+      overflow: hidden;
+      z-index: 0;
+      margin-top: -25px;
+      display: block;
+     height: 230px;
+   }
+   .for-sale .fas,.for-buy .fas{
+    padding: 5px;color: white;
+   font-size: 20px;
+   
+  }
+  .footer-container{
+    color: white;
+    height: 100px;
+    text-align: center;
+    z-index: 1;
+  }
+}
+@media(max-width:300px){
+  .area{
+  
+    position: absolute;
+    top:140px;
+    left:170px;
+    z-index: 1;
+    
+}
+}
+@media(max-width:250px){
+  .nav-menu{
+    height:600px;
+    width:190px;
+  }
+
+  .nav-menu ul li a:hover{
+    background: tomato;
+     width:150px;
+    
+     transition-duration:0.2s;
+     text-align: left;
+    }
+
+    .contact-us{
+     
+      top:60%;
+      left:47%;
+      width:200px;
+      
+    }
+    .contact-us .contact-close-button{
+    
+      margin-left:125px;
+       padding:10px;
+      cursor: pointer;
+      color: white;
+    }
+    .overlay{
+      min-height: 200vh;
+    }
+    
+  .area{
+  
+    position: absolute;
+    top:340px;
+    left:123px;
+    z-index: 1;
+    
+}
+.state{
+  width:180px;
+  height:180px !important;
+  top:60px;
+  margin-left: 30px;
+}
+.state .division {
+  width: 100px;
+    background: rgb(5, 5, 5);
+    margin-right: 10px;
+    color: white;
+}
+.state .district {
+  width: 100px;
+  background: rgb(5, 5, 5);
+  color: white;
+  margin-right: 5px;
+  border:1px solid white;
+}
+.state .upozilla {
+  width: 100px;
+    background: rgb(5, 5, 5);
+    margin-right: 10px;
+    color: white;border:1px solid white;
+}
+.state .size {
+  width: 100px;
+    background: rgb(5, 5, 5);
+    margin-right: 3px;
+    color: white;border:1px solid white;
+}
+.state a {
+  width: 100px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+
+.overlay{
+  min-height: 360vh;
+}
+.modal-section{
+
+  
+  width:200px;
+  z-index: 6;
+  position: absolute;
+  top:70%;
+  left: 48%;
+  transform: translate(-50%,-50%);
+  
+  
+}
+.modal-section .modal-contacts{
+    
+  margin-left: -8px;
+  font-weight: lighter;
+  font-family: "Roboto";
+}
+.modal-section .close-button{
+
+  margin-left:130px;
+   padding:10px;
+  cursor: pointer;
+}
+.modal-section .sign-In{
+      margin-left: 50px;
+      border: none;
+      padding:5px;
+      font-weight: bold;
+      cursor: pointer;
+}
+
+
+
+.sign-in{
+
+  left:10px;
+  width:200px;
+  height: 750px;
+}
+.sign-in .signIn-close-button{
+  margin-left:120px;
+}
+.log-in{
+  left:20px !important;
+  margin: 10px;
+  width:180px !important;
+  height:330px;
+}.log-in .logIn-close-button{
+
+  margin-left:100px !important;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+
+}
+.do-want-section{
+  height:610px;
+}
+.do-want-section .for-buy{
+    
+  overflow: hidden;
+  z-index: 0;
+  margin-top: -35px;
+  display: block;
+  height: 300px;
+
+}
+ .do-want-section .for-sale{
+  
+    overflow: hidden;
+    z-index: 0;
+    margin-top: -25px;
+    display: block;
+   height: 320px;
+   padding:5px;
+ }
+.footer-container{
+  margin-top: -25px ;
+  padding-top: 15px;
+
+  
+}
+}
+ /*  .card-section-home .card-container{
+     width:360px;
+   }*/
+   @media(min-width:400px){
+    .nav-menu ul li a:hover{
+      background: tomato;
+       width:150px;
+       
+       transition-duration:0.2s;
+       text-align: center;
+      }
+      .area{
+  
+        position: absolute;
+        top:150px;
+        left:280px;
+        z-index: 1;
+        
+    }
+    .sign-in{
+      left:10px;
+      width:370px;
+    } .log-in{
+      left:90px;
+      width:300px;
+    }.log-in .logIn-close-button{
+    
+      margin-left:200px;
+       padding:10px;
+      cursor: pointer;
+      color: white;
+    
+    }
+    
+    .sign-in .signIn-close-button{
+      margin-left: 300px;
+    }
+    .overlay{
+      min-height: 225vh;
+    }
+    .modal-section{
+
+      margin:10px;
+      background-color:rgb(123, 174, 187);
+      width:300px;
+      z-index: 6;
+      position: absolute;
+      top:50%;
+      left: 48%;
+      transform: translate(-50%,-50%);
+      
+      
+    }
+    .modal-section .help{
+      text-align: center;
+      font-weight: lighter;
+      
+    }
+    .modal-section .modal-contacts{
+    
+      margin-left: 0px;
+      font-weight: lighter;
+      font-family: "Roboto";
+    }
+    .modal-section .close-button{
+    
+      margin-left:220px;
+       padding:10px;
+      cursor: pointer;
+    }
+    .modal-section .sign-In{
+          margin-left: 105px;
+          border: none;
+          padding:5px;
+          font-weight: bold;
+          cursor: pointer;
+    }
+    
+
+   }
+  @media(min-width:500px){
+    .nav-menu ul li a:hover{
+      background: tomato;
+       width:150px;
+
+       transition-duration:0.2s;
+       text-align: center;
+      }
+
+    .modal-section{
+
+      margin:10px;
+      background-color:rgb(123, 174, 187);
+      width:400px;
+      z-index: 6;
+      position: absolute;
+      left:85px;
+      padding:20px;
+      top:20%;
+      
+    }
+    .modal-section .help{
+      text-align: center;
+      font-weight: lighter;
+      
+    }
+    .modal-section .modal-contacts{
+    
+      margin-left: 0px;
+      font-weight: lighter;
+      font-family: "Roboto";
+    }
+    .modal-section .close-button{
+    
+      margin-left:300px;
+       padding:10px;
+      cursor: pointer;
+    }
+    .modal-section .sign-In{
+          margin-left: 105px;
+          border: none;
+          padding:5px;
+          font-weight: bold;
+          cursor: pointer;
+    }
+    
+
+
+    .sign-in{
+      left:20px;
+    }
+    .log-in{
+      left:50px;
+      width:400px;
+      top:20%;
+    }
+    .log-in .logIn-close-button{
+        
+      margin-left:290px;
+       padding:10px;
+      cursor: pointer;
+      color: white;
+    
+    }
+    .overlay{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      min-height:450vh;
+      filter: blur(3px);
+      opacity: 0.7;
+      background-color: black;
+      z-index: 5;
+    
+    }
+  }
+
+@media(min-width:600px){
+
+  .nav-menu ul li a:hover{
+    background: palegreen;
+     width:150px;
+    
+     text-align: center;
+    }
+    .area{
+  
+      position: absolute;
+      top:150px;
+      left:360px;
+      z-index: 1;
+      cursor: pointer;
+      
+  }
+  .contact-us{
+    background: indigo;
+    margin:10px;
+    background: #02031C;
+    height:540px;
+    z-index: 6;
+    position: absolute;
+    left: 130px;
+    padding:20px;
+    top:15%;
+    width:400px;
+    
+  }
+  .contact-us .contact-close-button{
+
+    margin-left:320px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  }
+  .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:180vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  .sign-in{
+    left:90px;
+  }
+  .log-in{
+    left:100px;
+    width:400px;
+  }
+  .log-in .logIn-close-button{
+      
+    margin-left:290px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  
+  }
+  .do-container .buy-sell{
+    width:28rem;
+     flex-direction: row;
+     height:50%;
+     position: relative;flex-wrap: nowrap;
+     top:90px;
+     margin: 10px;
+    
+   }
+   .buy-sell .for-sale{
+    background:#2C2727 ;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    font-weight: lighter;
+   
+  
+  } .buy-sell .for-buy{
+    background:#2F6D7B ;
+    text-align: center;
+    font-size: 13px;font-weight: lighter;
+  
+  }
+  .do-container .links{
+    width:190px;
+    background-color: white;
+    opacity: 0.7;
+    padding: 7px;;
+    flex-wrap: wrap;
+    margin:10px;
+    position:relative;
+    top:50px;
+    
+  }
+  .for-sale a, .for-buy a{
+    font-size: 20px;
+     overflow: hidden;
+     color: white;
+  }
+  
+  .links .useful h3,
+  .links .contacts h3,
+  .links .about h3{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .links .contacts p{
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  .links .useful a, .links .about a{
+    font-weight: lighter;
+    text-decoration: none;font-size: 15px;
+  }
+
+
+}
+  @media(min-width:700px){
+    .nav-menu ul li a:hover{
+      background: tomato;
+       text-align: center;
+      }
+
+      .area{
+  
+        position: absolute;
+        top:130px;
+        left:580px;
+        z-index: 2;
+        
+    }
+    .contact-us{
+     
+      height:540px;
+      z-index: 6;
+      position: absolute;
+     
+    top:37%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+      width:350px;
+      
+    }
+    .overlay{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      min-height:180vh;
+      filter: blur(3px);
+      opacity: 0.7;
+      background-color: black;
+      z-index: 5;
+    
+    } .contact-us .contact-close-button{
+
+      margin-left:280px;
+       padding:10px;
+      cursor: pointer;
+      color: white;
+    }
+    .modal-section{
+
+      margin:10px;
+      background-color:rgb(123, 174, 187);
+      width:450px;
+      z-index: 6;
+      position: absolute;
+      top:40%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+    .modal-section .help{
+      text-align: center;
+      font-weight: lighter;
+      
+    }
+    .modal-section .modal-contacts{
+    
+      margin-left: 0px;
+      font-weight: lighter;
+      font-family: "Roboto";
+    }
+    .modal-section .close-button{
+    
+      margin-left:360px;
+       padding:10px;
+      cursor: pointer;
+    }
+    .modal-section .sign-In{
+          margin-left: 180px;
+          border: none;
+          padding:5px;
+          font-weight: bold;
+          cursor: pointer;
+    }
+    
+    .sign-in{
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+    .log-in{
+
+
+      margin:10px;
+      background: #2F6D7B;
+       width:484px;
+      height:310px;
+      z-index: 5;
+      position: absolute;
+    
+      top:40%;
+      left:50%;
+      transform: translate(-50%,-50%);
+     
+       
+    }
+    .log-in .logIn-close-button{
+    
+      margin-left:380px;
+       padding:10px;
+      cursor: pointer;
+      color: white;
+    
+    }
+  .state{
+      display: flex;
+      flex-direction: row;
+       padding:15px;
+      height:100%;justify-content: center;align-items: center;
+     }
+    .state .division {
+      width: 200px;
+      background: rgb(5, 5, 5);
+      color: white;
+      margin-right: 10px;
+      border:1px solid white;
+      margin-left: 20px;
+    }
+    .state .district {
+      width: 200px;  
+      background: rgb(5, 5, 5);
+      color: white;
+      margin-right: 10px;
+      border:1px solid white;
+    }
+    .state .upozilla {
+      width: 200px; 
+      background: rgb(5, 5, 5);
+      color: white;
+      margin-right: 10px; 
+      border:1px solid white;
+    
+    }
+    .state .size {
+      width: 200px;
+      background: rgb(5, 5, 5);
+      color: white;   
+      margin-right: 10px;
+      border:1px solid white;
+    }
+    .state button {
+      width: 100px;
+      border-radius: 10px;
+      padding: 5px;
+      font-size: 18px;
+      font-weight: bold;margin-bottom:5px;margin-right: 20px;
+    }
+    .buy-sell .for-sale h4,
+    .buy-sell .for-buy h4{
+    
+          font-size: 16px;
+          font-weight: bold;
+          padding:10px;
+    
+    }
+  }
+  @media(min-width:800px){
+    .log-in{
+      z-index: 5;
+      position: absolute;
+    
+      top:35%;
+      left:50%;
+      transform: translate(-50%,-50%);
+     
+       
+    }
+    .overlay{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      min-height:160vh;
+      filter: blur(3px);
+      opacity: 0.7;
+      background-color: black;
+      z-index: 5;
+    
+    }
+
+
+  }
+
+
+  @media(min-width: 1000px){
+   
+  .button .Log{
+    margin-top: 0px;
+  }
+ 
+    .area{
+  
+      position: absolute;
+      top:52px;
+      left:265px;
+      z-index: 1;
+      
+  } 
+  .modal-section{
+
+    margin:10px;
+    background-color:rgb(123, 174, 187);
+    width:450px;
+    z-index: 6;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+  }
+  .modal-section .help{
+    text-align: center;
+    font-weight: lighter;
+    
+  }
+  .modal-section .modal-contacts{
+  
+    margin-left: 0px;
+    font-weight: lighter;
+    font-family: "Roboto";
+  }
+  .modal-section .close-button{
+  
+    margin-left:350px;
+     padding:10px;
+    cursor: pointer;
+  }
+  .modal-section .sign-In{
+        margin-left: 180px;
+        border: none;
+        padding:5px;
+        font-weight: bold;
+        cursor: pointer;
+  }
+  
+
+
+
+  .sign-in{
+    width:450px;
+    top:65%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  .sign-in .signIn-close-button{
+    margin-left:350px;
+  }
+  .log-in{
+
+
+     width:484px;
+    height:310px;
+    z-index: 5;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+     
+  }
+  .log-in .logIn-close-button{
+  
+    margin-left:380px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  
+  }
+.navbar {
+  border-bottom: 4px white solid;
+  opacity: 0.6;
+  color: beige;
+  
+}
+.nav-menu{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-menu .navbar-nav{
+  margin-right: 140px;
+}
+.nav-menu .navbar-nav:not(:last-child){
+  margin-left: 0px;
+}
+.nav__close{
+    position: relative;
+    right:-100%;
+}
+
+ .contact-us{
+ 
+  left: 50%;
+  top:30%;
+  transform: translate(-50%,-50%);
+  width:380px;
+  
+}
+.overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:140vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 5;
+
+} 
+.contact-us .contact-close-button{
+
+  margin-left:300px;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+}
+ .state .division {
+  width: 210px;
+    background: rgb(5, 5, 5);
+    margin-left: 5px;
+    color: white;
+  
+}
+
+
+.do-want-section .buy-sell{
+  margin-top:-5px;
+}
+
+    .do-container .links{
+      width:320px;
+      background-color: white;
+      opacity: 0.7;
+      padding:14px;
+      position:relative;
+      top:40px;
+      display: flex;
+      flex-wrap: wrap;
+      height:270px;
+    } 
+     .links .contacts{
+      position: relative;
+      left: 15px;
+    }
+    .do-container .buy-sell{
+      margin-right: 20px;
+      width:45rem;
+      flex-direction: row;
+      
+      position: relative;
+      top:115px;
+      
+   }  
+   .buy-sell .for-sale {
+    background:#2C2727 ;
+    width:25rem;
+     justify-content: center;align-items: center;
+    font-size: 13px;
+
+  
+  } .buy-sell .for-buy{
+    background:#2F6D7B;
+     justify-content: center;align-items: center;
+    font-size: 13px;
+    width: 25rem;
+    padding: 5px;
+  
+  } 
+  .buy-sell .for-sale h4,
+  .buy-sell .for-buy h4{
+         font-size: 20px;
+        font-weight: bold;
+        padding:10px;
+  
+  }
+
+  .for-sale a, .for-buy a{
+    font-size: 25px;
+     overflow: hidden;color: white;
+  }
+  .for-buy span{
+   padding:7px;
+
+
+  }
+  .links .useful h3,
+  .links .contacts h3,
+  .links .about h3{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .links .contacts p{
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  .links .useful a, .links .about a{
+    font-weight: lighter;
+    text-decoration: none;font-size: 15px;
+  }
+
+ 
+.for-sale blockquote,  .for-buy blockquote {
+   
+  font-weight: lighter;
+  color: white;
+  font-size: 13px;
+  
+}
+.for-sale .fas{
+  padding: 5px;
+  color: white;
+
+}
+
+}
+
+@media(min-width:1100px){
+  .nav-menu ul li a:hover{
+    background: tomato;
+     text-align: center;
+    }
+
+  .nav-menu .navbar-nav{
+    margin-right: 250px;
+  }
+  .state .division {
+    width: 210px;
+      background: rgb(5, 5, 5);
+      margin-left: 20px;
+      color: white;
+    
+  }
+  .area{
+    
+    position: absolute;
+    top:52px;
+    left: 430px;
+    z-index: 1;
+  }
+ 
+  
+}
+
+@media(min-width:1200px){
+  .nav-menu ul li a:hover{
+    background: tomato;
+     text-align: center;
+    }
+
+  .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:250vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  .contact-us{
+   
+    height:540px;
+    z-index: 6;
+    position: absolute;
+   
+    top:47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:500px;
+    
+  }
+  .contact-us .contact-close-button{
+  
+    margin-left:410px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  }
+  .modal-section{
+    top:50%;
+  }
+  .area{
+
+    position: absolute;
+    top:52px;
+    left:400px;
+    z-index: 1;
+  
+  }
+  .sign-in{
+    top:80%;
+    left:50%;
+  }
+  .log-in{
+
+
+     width:484px;
+    height:310px;
+    z-index: 5;
+    position: absolute;
+    left:50%;
+    top:40%;
+    transform: translate(-50%,-50%);
+  
+  }
+  .log-in .logIn-close-button{
+  
+    margin-left:380px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  
+  }
+
+}
+@media(min-width:1300px){
+ .area{
+
+    position: absolute;
+    top:52px;
+    left:500px;
+    z-index: 1;
+  
+  }
+  .modal-section{
+
+    margin:10px;
+    background-color:rgb(123, 174, 187);
+    width:450px;
+    z-index: 6;
+  
+   
+    padding:20px;
+    top:50%;
+    left:50%;
+  }
+  .modal-section .help{
+    text-align: center;
+    font-weight: lighter;
+    
+  }
+  .modal-section .modal-contacts{
+  
+    margin-left: 0px;
+    font-weight: lighter;
+    font-family: "Roboto";
+  }
+  .modal-section .close-button{
+  
+    margin-left:360px;
+     padding:10px;
+    cursor: pointer;
+  }
+  .modal-section .sign-In{
+        margin-left: 175px;
+        border: none;
+        padding:5px;
+        font-weight: bold;
+        cursor: pointer;
+  }
+  .contact-us{
+   
+    height:580px;
+    z-index: 6;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:500px;
+    
+  }
+
+  .log-in{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:500px;
+  }
+ /* .sign-in{
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:500px;
+    
+  }*/
+ 
+  .overlay{
+    min-height: 200vh;;
+  }
+  
+  /*
+  .area{
+  
+    position: absolute;
+    top:52px;
+    left:390px;
+    z-index: 1;
+    
+} */
+
+
+
+}
+@media(min-width:1400px){
+  .area{
+
+    position: absolute;
+    top:52px;
+    left:570px;
+    z-index: 1;
+    
+     
+  }
+  .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:220vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  .contact-us{
+   
+    height:540px;
+    z-index: 6;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:500px;
+    
+  }
+  .contact-us .contact-close-button{
+  
+    margin-left:400px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .log-in{
+
+
+  
+     width:484px;
+    height:310px;
+    z-index: 5;
+    position: absolute;
+    top:37%;
+    left:50%;
+    transform: translate(-50%,-50%);
+ 
+     
+  }
+  .log-in .logIn-close-button{
+  
+    margin-left:380px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  
+  }
+  .modal-section{
+
+ 
+    width:450px;
+    z-index: 6;
+    position: absolute;
+ 
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+  }
+
+}
+@media(min-width:1500px){
+  .nav-menu .navbar-nav{
+    margin-right: 350px;
+  }
+  .area{
+
+  
+    top:52px;
+    left:610px;
+    z-index: 1;
+    
+     
+  }
+}
+@media(min-width:1600px){
+  .nav-menu .navbar-nav{
+    margin-right: 400px;
+  }
+ 
+}

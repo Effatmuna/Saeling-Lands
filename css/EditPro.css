@@ -1,0 +1,497 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+.profile-section {
+    background: url("pic11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+  }
+  .areaTwo{
+
+    position: fixed;
+    top:52px;
+    left:450px;
+    z-index: 2;
+    
+     
+  }
+  .areaTwo .Division{
+    width:120px;
+    background: rgb(5, 5, 5);
+    color: white;
+    margin: -5px;
+     border:1px white solid;
+  }
+  .hiddenTwo{
+  
+    
+  display: none;
+  
+  }
+  .show-contactTwo{
+    display: none;
+  }
+  
+.contact-us{
+  background: indigo;
+  margin:10px;
+  background: #02031C;
+  height:550px;
+  z-index: 5;
+  position: absolute;
+  left:440px;
+  padding:20px;
+  top:15%;
+  
+  
+}
+.overlayTwo{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:150vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 1;
+
+}
+
+.Edit-profile{
+  position: absolute;
+  z-index: 0;
+  top:83px;
+  right:-0px;
+  width:100%;
+  height: 83px;
+  
+}
+.Edit-profile .text-white{
+  font-size: 20px;
+  font-weight: 600;
+
+}
+.addInfo .fas{
+    font-size: 30px;
+    color: white;
+}
+#editAdvertiseBtn{
+    
+  margin-left:850px;
+}
+label{
+    color: black;
+}
+.ImageFile{
+    height:40px;
+    width:255px;
+     border: 1px solid rgb(230, 79, 79);
+     border-radius: 5px;
+    color: rgb(230, 79, 79);
+     text-align: center;
+     padding: 7px;
+     margin: auto;
+     position: relative;
+     left:-15px;
+     bottom:5px;
+     font-size: 15px;
+     font-weight: lighter;
+}
+@media(max-width:414px){
+  
+  #editAdvertiseBtn{
+  
+    position: absolute;
+    top:150px;
+    margin-left: -150px;
+ }
+   #NewAdvertiseBtn{
+     margin-bottom: -130px;
+     margin-left: -150px;
+   }
+    #dropdownMenu{
+    margin-top: 35px;
+        margin-left: -150px;
+  }
+
+}
+/*@media(max-width:360px){
+  #editAdvertiseBtn{
+    display: ruby-base;
+    margin-left: 0px;
+   
+}
+#NewAdvertiseBtn{
+   display: ruby-base;
+   margin-top: 50px;
+}
+}
+*/
+@media(max-width:300px){
+  #logOut{
+  
+    display: flex;
+    margin-top: 5px;
+  }
+  #dropdownMenu{
+    margin-top: 35px;
+        margin-left: -150px;
+  }
+
+  #editAdvertiseBtn{
+  
+    position: absolute;
+    top:120px;
+    margin-left: -177px;
+ }
+   #NewAdvertiseBtn{
+     margin-bottom: 60px;
+     margin-left: 10px;
+   }
+   .ImageFile{
+     width:210px;
+   }
+   .overlayTwo{
+    min-height: 220vh;
+  }
+  .contact-us{
+    top:110%;
+    left:47%;
+    transform: translate(-50%,-50%);
+    width:200px;
+    height: 550px;
+  }
+
+}
+@media(max-with:250px){
+  .overlayTwo{
+    min-height: 100vh;
+  }
+  .contact-us{
+    top:50%;
+    left:47%;
+    transform: translate(-50%,-50%);
+    width:200px;
+    height: 550px;
+  }
+  .contact-us .contact-close-button{
+    margin-left: 0px;
+  }
+
+}
+
+@media(min-width:300px){
+  #logOut{
+  
+    display: flex;
+    margin-top: 5px;
+  }
+  #editAdvertiseBtn{
+  
+    position: absolute;
+    top:150px;
+    margin-left: -150px;
+ }
+   #NewAdvertiseBtn{
+     margin-bottom: -130px;
+     margin-left: -150px;
+   }
+  #dropdownMenu{
+    margin-top: 35px;
+        margin-left: -150px;
+  }
+  .overlayTwo{
+    min-height: 195vh;
+  }
+  .contact-us{
+    top:55%;
+    left:47%;
+    transform: translate(-50%,-50%);
+  }
+}
+@media(min-width:400px){
+  #editAdvertiseBtn{
+  
+   position: absolute;
+   top:150px;
+   margin-left: -140px;
+}
+  #NewAdvertiseBtn{
+    margin-bottom: -127px;
+    margin-left: -140px;
+  }
+  .ImageFile{
+    width:250px;
+  }
+  #dropdownMenu{
+    margin-top: 35px;
+        margin-left: -150px;
+  }
+  .contact-us{
+  
+    left:47%;
+    
+    top:45%;
+    transform: translate(-50%,-50%);
+    
+  }
+  .overlayTwo{
+    min-height: 175vh;
+  }
+
+}
+@media(min-width:700px){
+  .overlayTwo{
+    min-height: 105vh;
+  }
+  .contact-us{
+  
+    left:50%;
+    
+    top:30%;
+    transform: translate(-50%,-50%);
+    
+  }
+  #NewAdvertiseBtn{
+    margin-bottom: -100px;
+    margin-left: -150px;
+  }
+  #editAdvertiseBtn{
+    margin-left: -150px;
+    margin-top: -15px;
+  }
+  .ImageFile{
+    width:150px;
+  }
+  .overlayTwo{
+    min-height: 150vh;
+  }
+
+}
+@media(min-width:800px){
+  .areaTwo{
+
+    position: absolute;
+    top:70px;
+    left:570px;
+    z-index: 2;
+    
+     
+  }
+  #NewAdvertiseBtn{
+    margin-bottom: -100px;
+    margin-left: -150px;
+  }
+  #editAdvertiseBtn{
+    margin-left: -150px;
+    margin-top: -15px;
+  }
+  .ImageFile{
+    width:150px;
+  }
+  .contact-us{
+  
+    left:50%;
+    top:30%;
+    transform: translate(-50%,-50%);
+    
+  }
+  .overlayTwo{
+    min-height: 90vh;
+  }
+}
+
+
+@media(min-width:1000px){
+#logOut{
+  margin-top: 0;
+}
+  .areaTwo{
+
+    position: absolute;
+    top:52px;
+    left:280px;
+    z-index: 2;
+    
+     
+  }
+  #editAdvertiseBtn{
+  
+    position: absolute;
+    top:97px;
+    margin-left: -150px;
+ }
+   #NewAdvertiseBtn{
+     margin-bottom: -95px;
+     margin-left: -10px;
+   }
+  #dropdownMenu{
+    margin-top: 35px;
+        margin-left: 5px;
+  }
+  .overlayTwo{
+    min-height: 70vh;
+  }
+  .contact-us{
+    top:30%;
+  }
+  .ImageFile{
+
+    width:255px;
+  }
+}
+@media(min-width:1200px){
+  #editAdvertiseBtn{
+    display: inline;
+    margin-left: 920px;
+    margin-top: -60px;
+}
+#NewAdvertiseBtn{
+   display: inline;
+   margin-left: 770px;
+   
+}
+#dropdownMenu{
+  margin-top: -10px;
+      margin-left: 5px;
+}
+.contact-us{
+  
+  left:50%;
+  
+  top:50%;
+  transform: translate(-50%,-50%);
+  
+}
+.overlayTwo{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:115vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 1;
+
+}                                                                                                                                               
+}
+@media(min-width:1300px){
+  .areaTwo{
+
+    position: absolute;
+    top:52px;
+    left:470px;
+    z-index: 2;
+    
+     
+  }
+  #dropdownMenu{
+    margin-top: -10px;
+        margin-left: 5px;
+  }
+  #editAdvertiseBtn{
+    display: inline;
+    margin-left: 960px;
+    margin-top: -60px;
+}
+#NewAdvertiseBtn{
+   display: inline;
+   margin-left: 820px;
+   
+}
+  .contact-us{
+  
+    left:50%;
+    
+    top:60%;
+    transform: translate(-50%,-50%);
+    
+  }
+  .overlayTwo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:165vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 1;
+  
+  }.ImageFile{
+
+    width:255px;
+  }
+
+}
+
+@media(min-width:1400px){
+  #editAdvertiseBtn{
+      display: inline;
+      margin-left: 1050px;
+  }
+  #NewAdvertiseBtn{
+     display: inline;
+     margin-left: 910px;
+  }
+  .contact-us{
+    top:50%;
+  }
+  .overlayTwo{
+
+    min-height: 120vh;
+  }
+  .ImageFile{
+
+    width:255px;
+  }
+}
+@media(min-width:1500px){
+  #editAdvertiseBtn{
+      display: inline;
+      margin-left: 1050px;
+  }
+  #NewAdvertiseBtn{
+     display: inline;
+     margin-left: 910px;
+  }
+  .contact-us{
+    top:50%;
+  }
+  .overlayTwo{
+
+    min-height: 120vh;
+  }
+  .ImageFile{
+
+    width:255px;
+  }
+}
+
+@media(min-width:1600px){
+  #editAdvertiseBtn{
+      display: inline;
+      margin-left: 1050px;
+  }
+  #NewAdvertiseBtn{
+     display: inline;
+     margin-left: 910px;
+  }
+  .contact-us{
+    top:50%;
+  }
+  .overlayTwo{
+
+    min-height: 120vh;
+  }
+  .ImageFile{
+
+    width:255px;
+  }
+}
+
